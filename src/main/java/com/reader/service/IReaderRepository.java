@@ -8,7 +8,7 @@ import com.reader.model.Reader;
 
 public interface IReaderRepository extends JpaRepository<Reader, Integer> {
 	
-	public List<Reader> getReaderByType(String ReaderType);
+	public List<Reader> getReaderByType(String readerType);
 
-	public List<Reader> getReaderByPhone(String Phone);
+	public List<Reader> getReaderByPhone(String phone);
 }

@@ -10,8 +10,8 @@ public interface IReaderService {
 
 	public List<Reader> getAllReaders();
 
-	public List<Reader> getReaderByType(String ReaderType);
+	public List<Reader> getReaderByType(String readerType);
 
-	public List<Reader> getReaderByPhone(String Phone);
+	public List<Reader> getReaderByPhone(String phone);
 	
 }

@@ -1,8 +1,5 @@
 package com.reader.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Reader {
 	
 	public Integer id;
@@ -32,16 +29,7 @@ public class Reader {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	List<Books> books =new ArrayList<>();
 	
-	public List<Books> getBooks() {
-		return books;
-	}
-
-	public void setBooks(List<Books> books) {
-		this.books = books;
-	}
-
 	public String getName() {
 		return name;
 	}

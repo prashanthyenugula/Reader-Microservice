@@ -31,7 +31,7 @@ public class ReaderController {
 	}
 	
 	@GetMapping("/getAllReaders")
-	List<Reader> getReader() {
+	List<Reader> getReaders() {
 		return readerService.getAllReaders();
 	}
 	
@@ -49,10 +49,10 @@ public class ReaderController {
 	
 	@GetMapping("getBooksBy/{phone}")
 	public Reader getBooks(@PathVariable("phone") String phone) {
-		Reader reader = (Reader) this.readerService.getReaderByPhone(phone);
+		Reader reader =  (Reader) this.readerService.getReaderByPhone(phone);
 		
 		List books = this.restTemplate.getForObject("http:Author-Microservice/getBook/" + phone, List.class);
-		reader.setBooks(books);
+		//reader.setBooks(books);
 		return reader;
 		
 	}
